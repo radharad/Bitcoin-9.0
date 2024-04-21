@@ -1,0 +1,1600 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: "Poppins";
+}
+
+p{
+color: #616161;
+font-size: 17px;
+}
+
+.p{
+  padding: 0px 150px;
+}
+
+:root{
+--black-color:#000000;
+--white-color:#ffffff;
+--supporting-color:#00A79D;
+}
+
+.common--header{
+  font-size: 20px;
+  color: var(--supporting-color);
+  font-weight: 500;
+}
+
+.common--subheader{
+ font-size: 50px;
+ font-weight: 600;
+ line-height: 70px;
+}
+
+.common--subheader-2{
+  font-size: 60px;
+ font-weight: 600;
+ line-height: 80px;
+ margin: 10px 0px 30px 0px;
+}
+
+.btn{
+    background-color: var(--supporting-color);
+    padding:15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--supporting-color);
+    border: 1px solid var(--supporting-color);
+}
+
+.transparent-btn{
+    background-color: transparent;
+    color: var(--supporting-color);
+    border: 1px solid var(--supporting-color);
+    padding:15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7px;
+    transition: 0.3s ease-in-out;
+}
+
+.transparent-btn:hover{
+    background-color: var(--supporting-color); 
+    color: var(--black-color); 
+}
+
+.banner-section{
+  /* background: linear-gradient(rgba(3, 3, 3, 0.5),rgba(15, 15, 15, 0.5)), url("https://www.vecteezy.com/vector-art/10969909-light-green-background-bitcoin-crypto-currency-illustration-vector-for-page-logo-card-banner-web-and-printing"); */
+  background-image: url('https://mobidev.biz/wp-content/uploads/2022/10/cryptocurrency-trading-platform_banner.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  i{
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .banner-content{
+   text-align: right;
+   padding: 200px 0px 150px 0px;
+
+   div{
+    font-weight: 600;
+    font-size: 20px;
+   }
+  }
+}
+
+.home-section,
+.economy-section,
+.crypto-section,
+.services-section,
+.token-section,
+.sale-section,
+.features-section,
+.team-section,
+.faq-section,
+.footer-section,
+.bank-section,
+.business-section,
+.contact-section{
+  overflow-x: hidden;
+}
+
+/* Nav Section Start */
+
+.header-area {
+    background-color:var(--supporting-color);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .navbar-area {
+    background: rgba(0,0,0,.3);
+    border-bottom: 1px solid var(--black-color);
+  }
+
+  .site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a.site-logo {
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .site-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  .site-navbar ul li a {
+    color: #fff;
+    padding: 25px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .site-navbar ul li a:hover {
+    background: rgba(255,255,255,.1);
+    color:#d4e9e7;
+  }
+ 
+  .nav-toggler {
+    border: 3px solid #fff;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+  }
+
+  .nav-toggler span, 
+  .nav-toggler span:before, 
+  .nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: .3s;
+  }
+  .nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+  }
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+  }
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  .login a,
+  .register a{
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    padding: 10px 20px!important;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+  }
+
+  .login a:hover,
+  .register a:hover{
+    background-color: var(--white-color);
+    color: var(--supporting-color);
+  }
+ 
+/* Nav Section End */
+
+/* Home Section Start */
+
+.home-section{
+  .row{
+    align-items: center;
+    padding-top: 200px;
+  }
+
+  p{
+    margin-bottom: 30px;
+  }
+
+ .slide-img{
+  animation: slide 2s alternate infinite; 
+ }
+}
+
+@keyframes slide{
+    0% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg)
+    }
+}
+
+.home-section{
+
+    .slick-prev{
+        z-index: 90;
+        position: absolute;
+        top: 354px;
+        left: 20px;
+        background-color: transparent;
+        color:var(--white-color);
+        border: none;
+     }
+    
+     .slick-next{
+         z-index: 90;
+         position:absolute;
+          /* bottom: 268px; */
+          bottom: 163px;
+         right: 20px;
+         background-color: transparent;
+         color:var(--white-color);
+         border: none;
+      }
+      .slick-prev,
+      .slick-next{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+     .slick-prev i,
+     .slick-next i{
+         font-size: 60px;
+        
+     }
+    }
+
+   .home-second-slide{
+    .bitcoin-rotation{
+    position: relative;
+    }
+    .coin{
+        position: absolute;
+        left: 310px;
+    }
+   }
+
+       
+
+/* Home Section End */
+
+/* Economy Section Start */
+
+.economy-section{
+  padding: 200px 0px 100px 0px;
+
+.d-flex{
+  margin: 30px 0px;
+}
+
+.num{
+  background-color: var(--supporting-color);
+  color: var(--black-color);
+  border-radius: 50%;
+  padding:5px 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.num-outer{
+  border: 1px solid var(--supporting-color);
+  border-radius: 50%;
+  padding: 5px;
+  height: 100%;
+}
+
+}
+/* Economy Section End */
+
+/* Crypto Section Start */
+
+.crypto-section{
+  padding-bottom: 100px;
+
+  img{
+    -webkit-animation:bounce-in-top 20s infinite both;animation:bounce-in-top 20s infinite both
+  }
+
+  button{
+    margin-top: 20px;
+  }
+}
+
+@-webkit-keyframes bounce-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-30px);transform:translateY(-30px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-15px);transform:translateY(-15px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+@keyframes bounce-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateY(-30px);transform:translateY(-30px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateY(-15px);transform:translateY(-15px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateY(-8px);transform:translateY(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+/* Crypto Section End */
+
+/* Services Section Start */
+
+.services-section{
+  padding-bottom: 100px;
+
+  .service-card{
+    background-color:#111010;
+    padding:40px 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    margin-top: 10px;
+
+    div,i{
+      color: var(--supporting-color);
+    }
+
+    i{
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.service-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  z-index: -1;
+}
+
+.service-card::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--supporting-color);
+  z-index: -2;
+  clip-path: circle(15% at 95% 5%);
+  transition: .2s;
+}
+
+.service-card .circle{
+  position: absolute;
+ bottom: 20px;
+  right: 25px;
+}
+
+.service-card:hover::after{
+  clip-path: circle(100%);
+  background:rgba(46, 190, 216, 0.3);
+}
+
+.service-card:hover div{
+  color: var(--white-color);
+}
+
+/* Services Section End */
+
+/* Token Section Start */
+
+.token-section{
+  padding-bottom: 100px;
+
+  .row{
+    margin-top: 100px;
+    align-items: center;
+  }
+  #myPieChart{
+    height: 400px;
+    width: 400px;
+  }
+  span{
+    color:#616161;
+  }
+  h5{
+    margin-bottom: 10px;
+  }
+  .progress{
+    height: 8px;
+    background-color: #616161;
+  }
+  .progress-bar-first{
+    background-color: #808080;
+  }
+  .progress-bar-second{
+    background-color: #0000FF;
+  }
+  .progress-bar-third{
+    background-color: #FFFF00;
+  }
+  .progress-bar-fourth{
+    background-color: #00A79D;
+  }
+  .progress-bar-fifth{
+    background-color: #FF0000;
+  }
+  .progress-line{
+    margin-bottom: 25px;
+  }
+}
+
+/* Token Section End */
+
+/* Token Sale Section Start */
+
+.sale-section{
+  padding-bottom: 100px;
+
+  .d-flex{
+    margin-bottom: 10px;
+
+    .first{
+      color: var(--supporting-color);
+      border: 1px solid #191F2F;
+      padding:15px 10px;
+      width: 30%;
+    }
+    .second{
+      color:#616161;
+      border-right: 1px solid #191F2F;
+      border-top: 1px solid #191F2F;
+      border-bottom: 1px solid #191F2F;
+      padding:15px 10px;
+      width: 70%;
+    
+    }
+  }
+}
+
+/* Token Sale Section End */
+
+/* Features Section Start */
+
+.features-section{
+  padding-bottom: 100px;
+  position: relative;
+
+  .num{
+    background-color: var(--supporting-color);
+    color: var(--black-color);
+    border-radius: 50%;
+    padding:5px 13px;
+    font-weight: 600;
+    font-size: 35px;
+  }
+  
+  .num-outer{
+    border: 1px solid var(--supporting-color);
+    border-radius: 50%;
+    padding: 5px;
+    height: 100%;
+  }
+
+  .feature-left-card{
+    text-align: right;
+    margin-bottom: 50px;
+  }
+
+  .feature-right-card{
+    text-align: left;
+    margin-bottom: 50px;
+
+  }
+
+  .row{
+    align-items: center;
+  }
+
+  .mob-img img{
+  padding-left: 25px;
+  position: relative;
+  }
+   
+  .bitcoin-rotation{
+    position: absolute;
+    bottom: 247px;
+    right: 579px;
+  }
+  #div {
+ 
+    img{
+        width: 150px;
+        height: 150px;
+        opacity: 1;
+    }
+}
+.feature-left-side{
+  order: 1;
+}
+.feature-middle-side{
+  order: 2;
+}
+.feature-right-side{
+  order: 3;
+}
+}
+
+/* Features Section End */
+
+/* Team Section Start */
+
+.team-section{
+  padding-bottom: 100px;
+
+  .team-card{
+    padding:0px 30px;
+
+    .team-img{
+      position: relative;
+    }
+
+    .icons{
+      position: absolute;
+      background-color: var(--supporting-color);
+      color: var(--black-color);
+      padding: 10px;
+      border-radius: 7px;
+      left: -50px;
+      opacity: 0;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+
+  img{
+    width: 350px;
+    height: 300px;
+    border-radius:50%;
+  }
+
+  .team-info{
+    background-color: var(--supporting-color);
+    color: var(--black-color);
+    padding:20px;
+    border-radius: 7px;
+  }
+}
+
+.team-card:hover .icons{
+  opacity: 1;
+  left:50px
+}
+
+/* Team Section End */
+
+/* Faq Section Start */
+
+.faq-section{
+  padding-bottom: 100px;
+
+  form{
+  background-color:#0D1323;
+  padding: 20px;
+
+  h3>span{
+    border-bottom: 4px solid var(--supporting-color);
+    padding-bottom: 10px;
+  }
+  }
+
+  input, textarea{
+    background-color:#191F2D;
+    border: none;
+    margin-bottom: 20px;
+    padding: 17px;
+  }
+
+  ::placeholder{
+    color: var(--white-color);
+  }
+
+  .faq-item {
+    margin: 10px 0;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 20px;
+    background-color: #191F2D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.row{
+align-items: center;
+
+  img{
+    height: 250px;
+    width: 100%;
+  }
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 10px;
+    background-color: #191F2D;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.faq-item.open .faq-question{
+  color: var(--supporting-color);
+}
+
+.icon {
+    font-size: 1.2em;
+}
+
+}
+
+/* Faq Section End */
+
+/* Legal Section Start */
+
+.legal-section{
+  padding: 100px 0px;
+}
+
+.gallery-container{
+  margin-top: 100px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+.lightbox .nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox .nav-button.left {
+  left: 20px;
+}
+
+.lightbox .nav-button.right {
+  right: 20px;
+}
+
+/* Legal Section End */
+
+/* Bank Section Start */
+
+.bank-section{
+  width: 530px;
+  margin: auto;
+  padding:100px 0px;
+  position: relative;
+
+  .border-d{
+    border: 3px dotted #616161;
+    padding:5px 20px;
+    margin-bottom: 30px;
+    width: 90%;
+    text-align: start;
+    color: #87CEEB;
+  }
+
+  input{
+    background-color: transparent;
+  }
+
+  .d-flex button{
+    background: none;
+  }
+  
+  .fa-copy{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #87CEEB;
+    cursor: pointer;
+  }
+
+  .common--subheader{
+    margin-bottom: 50px;
+  }
+
+  .qr-code img{
+    margin: 20px 0px;
+  }
+  h5{
+   text-align: start;
+  }
+ .btn{
+  width: 100%;
+  margin: auto;
+ }
+
+ .bank-content{
+  padding: 30px;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+ }
+
+}
+
+/* Bank Section End */
+
+/* Business Section Start */
+
+.business-section{
+  padding:100px 0px;
+}
+
+.business-btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #40B3A2;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.business-btn:hover {
+  opacity: .95;
+}
+
+.business-btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
+
+/* Business Section End */
+
+/* Contact Section Start */
+/* .contact-banner-section{
+  background-image: url('https://www.montageind.com/images/reach-us.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 150px 30px;
+
+  .banner-content{
+     margin-bottom: 28px;
+  }
+} */
+
+.contact-banner{
+  background: linear-gradient(rgba(3, 3, 3, 0.5),rgba(15, 15, 15, 0.5)),url('https://www.montageind.com/images/reach-us.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  .banner-content{
+    text-align: left;
+  }
+} 
+
+.form-section{
+
+  margin: 100px 0px;
+  }
+  .contact-section .row{
+      align-items: center;
+  }
+  .contact-img{
+  background: linear-gradient(rgba(3, 3, 3, 0.5),rgba(15, 15, 15, 0.5)),url('https://www.shutterstock.com/image-photo/customer-support-phone-operator-glasses-600nw-2259351929.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 200px;
+  }
+  #captchaImage {
+      border: 1px solid #ddd;
+      z-index: 2000;
+      position: relative;
+      width: 100%;
+      text-align: center;
+      background-color: rgb(245,245,245);
+    }
+  
+    #refreshButton {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+      margin:0px 10px;
+     
+    }
+  #refreshButton i{
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+    #captchaInput {
+      padding: 5px;
+    }
+  
+  .contact-cards i{
+      font-size: 40px;
+      margin-bottom: px;
+      color:var(--main-color);
+      padding: 30px;
+      transition: all 0.3s linear;
+  }
+  .contact-cards i:hover{
+      transform: rotate(360deg);
+  }
+  .contact-header h2{
+      text-align: center;
+      color: #fff;
+  }
+  .form-container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 20px;
+    
+      margin: auto;
+  }
+  .form-container label{
+      font-weight: 500;
+      margin-bottom: 4px;
+      font-size: 15px;
+  }
+  .contact-section form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  
+  .input-group {
+      margin-bottom: 20px;
+  }
+  
+  label {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 5px;
+  }
+  
+  input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+  
+  button {
+      background-color:var(--supporting-color);
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  button:hover {
+      background-color: var(--main-color);
+  }
+  
+  button span {
+      margin-left: 5px;
+  }
+
+ 
+  
+  @media screen and (max-width: 600px) {
+      .form-container {
+          width: 90%;
+      }
+  }
+
+
+/* Contact Section End */
+
+/* Footer Section Start */
+
+.footer-section{
+  padding-top: 100px;
+  color: var(--white-color)!important;
+  padding-bottom: 20px;
+
+  .footer-icons span{
+    font-size: 22px;
+    color: var(--supporting-color);
+  }
+
+  .footer-icons i{
+    font-size: 18px;
+    padding: 0px 3px;
+  }
+
+  h5{
+    margin-bottom: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    
+  }
+  h6{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  ul li{
+  margin-bottom: 15px;
+  }
+
+  #email{
+    background-color:#191F2D;
+    border: none;
+    padding: 13px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: 80%;
+  }
+  .btn{
+    padding:13px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 15px;
+  }
+  .border-b{
+    border-bottom: 1px solid;
+    padding: 20px 0px;
+  }
+}
+
+/* Footer Section End */
+
+/* scroll to top button Start*/
+#myBtn{
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index:1000;
+  cursor: pointer;
+}
+.scrolltop{
+  float: right;
+}
+.scrolltop img{
+  width: 60px;
+}
+/* scroll to top button End */
+
+/* Scrollbar Section Start */
+
+/* Width */
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+    background:var(--white-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+ background:var(--white-color); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background:var(--supporting-color);
+}
+/* Scrollbar Section End */
+
+ /* Call Section Start */
+
+ .call img{
+  position: fixed;
+  cursor: pointer;
+  width: 60px;
+  bottom: 15px;
+  left: 20px;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Call Section End */
+
+/* text selection color start */
+
+::-moz-selection { /* Code for Firefox */
+  background:var(--supporting-color);
+  color: #fff;
+}
+
+::selection {
+  background:var(--supporting-color);
+  color: #fff;
+}
+
+/* text selection color end */
+
+/* coin animation */
+.wheel {
+    -webkit-animation: spin 5s linear infinite; 
+     animation: spin 5s linear infinite; 
+ }
+   
+   @-webkit-keyframes spin {
+     0% { -webkit-transform: rotate(0deg); }
+     100% { -webkit-transform: rotate(360deg); }
+   }
+   
+   @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+   }
+   
+   #div {
+ 
+     img{
+         width: 100px;
+         height: 100px;
+         opacity: 0.5;
+     }
+ }
+
+/* Mobile Responsiveness Start */
+
+@media only screen and (min-width:200px) and (max-width:767px){
+  .home-section .row{
+    padding-top: 100px;
+   }
+   .login a,
+   .register a{
+     padding: 10px 10px!important;
+   }
+
+    .navbar .container {
+      max-width: 720px;
+      z-index: 9999;
+    }
+    .nav-toggler{
+      display: block;
+    }
+    .site-navbar {
+      min-height: 60px;
+    }
+    .site-navbar .open{
+        z-index: 6000;
+    }
+    .site-navbar ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 60px);
+      left: 0;
+      top: 60px;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid #444;
+      background-color: var(--supporting-color);
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+    }
+    .site-navbar ul li {
+      width: 100%;
+      text-align: center;
+    }
+    .site-navbar ul li a {
+      padding:25px 20px;
+      font-size: 20px;
+    }
+    .site-navbar ul li a:hover {
+      background-color: rgba(255,255,255,.1);
+    }
+    .site-navbar ul.open {
+      max-height: 100vh;
+      overflow: visible;
+    }
+
+    .bitcoin-rotation{
+      display: none;
+    }
+
+  .common--subheader-2{
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  #myPieChart{
+    height:100%;
+    width:100%;
+  }
+  .login a{
+    margin-left: 0px;
+  }
+ .btn,
+ .transparent-btn{
+  padding: 15px;
+  font-size: 15px;
+ }
+
+ .economy-section{
+  padding: 100px 0px 50px 0px;
+
+  .common--header{
+    margin-top: 30px;
+  }
+ }
+
+ .common--subheader{
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 30px;
+ }
+
+ .crypto-section{
+   padding-bottom: 50px;
+
+  p{
+    text-align: justify;
+  }
+ }
+
+ .services-section{
+  padding-bottom: 50px;
+
+  .p{
+    padding: 0px;
+  }
+ }
+
+ .token-section{
+  padding-bottom: 50px;
+
+  p{
+    padding: 0px;
+  }
+
+  .row{
+    margin-top: 0px;
+  }
+  h2{
+    margin-top: 40px;
+  }
+ }
+
+ .sale-section{
+  padding-bottom: 50px;
+
+  p{
+    padding: 0px;
+  }
+  .first,.second{
+
+    font-size: 10px;
+  }
+ }
+
+ .features-section{
+  padding-bottom: 50px;
+
+  p{
+    padding: 0px;
+  }
+  .feature-left-card{
+    transform: scaleX(-1);
+   }
+   .feature-left-card .d-flex>div{
+     transform: scaleX(-1);
+     text-align: left;
+   }
+   .feature-left-side{
+    order: 1;
+  }
+  .feature-middle-side{
+    order: 3;
+  }
+  .feature-right-side{
+    order: 2;
+  }
+ }
+
+ .team-section{
+  padding-bottom: 50px;
+
+  .team-card{
+    padding: 10px;
+  }
+
+  p{
+    padding: 0px;
+  }
+ }
+
+ .faq-section{
+  padding-bottom: 50px;
+
+  p{
+    padding: 0px;
+  }
+ }
+
+ .footer-section{
+  padding-top: 30px;
+
+  h5{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .justify-content-between{
+    flex-direction: column;
+
+    .d-flex{
+      margin-top: 10px;
+    }
+  }
+ }
+
+.gallery-item img{
+  margin: 5px 0px;
+}
+
+
+.legal-section p{
+  padding: 0px;
+}
+
+.contact-section{
+  padding: 20px 0px;
+}
+.contact-section .map{
+  margin-top: 40px;
+}
+
+.banner-content{
+  padding-right: 20px!important;
+}
+.bank-section{
+  width: 100%;
+
+  .bitcoin img{
+    left: 152px;
+    bottom: 315px;
+  }
+}
+}
+ 
+  /* Mobile Responsiveness End */
+
+  /* Tab Responsiveness Start */
+
+  @media only screen and (min-width:768px) and (max-width:1024px){
+    .navbar .container {
+      max-width: 720px;
+      z-index: 9999;
+    }
+    .nav-toggler{
+      display: block;
+    }
+    .site-navbar {
+      min-height: 60px;
+    }
+    .site-navbar .open{
+        z-index: 6000;
+    }
+    .site-navbar ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 60px);
+      left: 0;
+      top: 60px;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid #444;
+      background-color: var(--supporting-color);
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+    }
+    .site-navbar ul li {
+      width: 100%;
+      text-align: center;
+    }
+    .site-navbar ul li a {
+      padding:25px 20px;
+      font-size: 20px;
+    }
+    .site-navbar ul li a:hover {
+      background-color: rgba(255,255,255,.1);
+    }
+    .site-navbar ul.open {
+      max-height: 100vh;
+      overflow: visible;
+    }
+
+
+    .bitcoin-rotation{
+      display: none;
+    }
+    .common--subheader-2{
+      font-size: 50px;
+      line-height: 65px;
+    }
+  
+    #myPieChart{
+      height:100%;
+      width:100%;
+    }
+    .login a{
+      margin-left: 0px;
+    }
+   .btn,
+   .transparent-btn{
+    padding: 15px;
+    font-size: 15px;
+   }
+  
+   .economy-section{
+    padding: 100px 0px 50px 0px;
+  
+    .common--header{
+      margin-top: 30px;
+    }
+   }
+  
+   .common--subheader{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+   }
+  
+   .crypto-section{
+     padding-bottom: 50px;
+  
+    p{
+      text-align: justify;
+    }
+   }
+  
+   .services-section{
+    padding-bottom: 50px;
+  
+    .p{
+      padding: 0px;
+    }
+   }
+  
+   .token-section{
+    padding-bottom: 50px;
+  
+    p{
+      padding: 0px;
+    }
+  
+    .row{
+      margin-top: 0px;
+    }
+    h2{
+      margin-top: 40px;
+    }
+   }
+  
+   .sale-section{
+    padding-bottom: 50px;
+  
+    p{
+      padding: 0px;
+    }
+
+   }
+  
+   .features-section{
+    padding-bottom: 50px;
+  
+    p{
+      padding: 0px;
+    }
+    .feature-left-card{
+      transform: scaleX(-1);
+     }
+     .feature-left-card .d-flex>div{
+       transform: scaleX(-1);
+       text-align: left;
+     }
+     .feature-left-side{
+      order: 1;
+    }
+    .feature-middle-side{
+      order: 3;
+    }
+    .feature-right-side{
+      order: 2;
+    }
+   }
+  
+   .team-section{
+    padding-bottom: 50px;
+  
+    .team-card{
+      padding: 10px;
+    }
+  
+    p{
+      padding: 0px;
+    }
+   }
+  
+   .faq-section{
+    padding-bottom: 50px;
+  
+    p{
+      padding: 0px;
+    }
+   }
+  
+   .footer-section{
+    padding-top: 30px;
+  
+    h5{
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  
+    .justify-content-between{
+      flex-direction: column;
+  
+      .d-flex{
+        margin-top: 10px;
+        div{
+          padding: 0px 30px 0px 0px;
+        }
+      }
+    }
+   }
+
+  .gallery-item img{
+    margin: 5px 0px;
+  }
+
+  .bank-section{
+    width: 100%;
+
+    
+  .bitcoin img{
+    left: 348px;
+    bottom: 315px;
+  }
+  }
+
+  .legal-section p{
+    padding: 0px;
+  }
+
+
+  .contact-section .map{
+    margin-top: 40px;
+  }
+
+  }  
+
+ /* Tab Responsiveness Start */
+ @media only screen and (width: 425px) {
+.bank-section .bitcoin img{
+  left: 177px;
+}
+}
+
