@@ -1,7 +1,7 @@
 # Bitcoin
 
 ## Description:
-This is a Bitcoin website built using HTML, CSS, JavaScript and some Modern Libraries.
+This is a Bitcoin website built using HTML, CSS, JavaScript and Modern Libraries.
 
 ## Installation Instructions:
 1. Clone the repository: `git clone https://github.com/radharad/Bitcoin-9.0.git `
